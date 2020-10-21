@@ -7,5 +7,4 @@ import pprint
 
 source = urllib.request.urlopen('https://dph.illinois.gov/covid19/covid-19-testing-sites').read()
 soup = BeautifulSoup(source, 'lxml')
-for div in soup.find_all('div', class_='listings'):
-    print(div.text)
+print(soup.body.nextsibling)
