@@ -5,3 +5,4 @@ import pprint
 URL = 'https://www.aepks.com/'
 page = requests.get(URL)
 soup = BeautifulSoup(page.content, 'html.parser')
+print(soup.prettify())
