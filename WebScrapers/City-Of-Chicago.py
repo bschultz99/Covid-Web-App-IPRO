@@ -21,6 +21,8 @@ with open(filename, 'w', newline='') as csvfile:
     csvwriter.writerow(fields)
     for testing in data:
        for test in testing.values():
-           print(test['phone'])
-        #   row = [test['facility'], test['phone'], test['address'], test['web_site']['url']]
-         #  csvwriter.writerow(row)
+           try:
+               row = [test['facility'], test['phone'], test['address'], test['web_site']['url']]
+               csvwriter.writerow(row)
+            except KeyError:
+                continue
