@@ -2,5 +2,5 @@
 Covid Web app for finding testing sites in the Chicago area
 
 
-#Update Automation
+# Update Automation
 A crontab is scheduled to run the ZabeUpater.sh script at midnight
