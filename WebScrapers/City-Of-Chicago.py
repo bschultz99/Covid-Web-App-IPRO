@@ -8,9 +8,8 @@ import csv
 url = "https://data.cityofchicago.org/resource/thdn-3grx.json"
 r = requests.get(url).json()
 data = []
-filename = "City-Of-Chicago.csv"
+filename = "WebScrapers/City-Of-Chicago.csv"
 fields = ['facility','phone','address','url']
-i = 0
 for site in r: 
     data.append({
         0 : site
@@ -21,8 +20,7 @@ with open(filename, 'w', newline='') as csvfile:
     csvwriter.writerow(fields)
     for testing in data:
        for test in testing.values():
-           try:
-               row = [test['facility'], test['phone'], test['address'], test['web_site']['url']]
-               csvwriter.writerow(row)
-            except KeyError:
-                continue
+           web_site = test.get('web_site') or {}
+           row = [test['facility'], test.get('phone'), test['address'], web_site.get('url')]
+           csvwriter.writerow(row)
+
