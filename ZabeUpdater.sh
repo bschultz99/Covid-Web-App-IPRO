@@ -7,6 +7,8 @@ cd /home/covid19webapp/Desktop/Covid-Wep-App-IPRO
 git pull
 
 #Run any necessary scripts
+python3 WebScrapers/City-Of-Chicago.py
+python3 WebScrapers/DPH-Illinois.py
 
 #Commit info back to Github
 git commit -m "AutoCommit on $date"
