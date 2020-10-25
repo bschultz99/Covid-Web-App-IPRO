@@ -1,6 +1,6 @@
 use testing_sites;
 
-TRUCNCATE chicago;
+TRUNCATE TABLE chicago;
 
 LOAD DATA LOCAL INFILE '/home/covid19webapp/Desktop/Covid-Wep-App-IPRO/WebScrapers/City-Of-Chicago.csv'
 INTO TABLE chicago
