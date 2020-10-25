@@ -8,8 +8,8 @@ CHARACTER SET latin1
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS
-(facility,phone,location,url);
+(locationName,hours,daysofoperation,requirements,webcovidhotline,address,city,zip,website,state,languagesoffered);
 
 UPDATE illinois
-    SET facility = REPLACE(facility, '*',',');
-    SET location = REPLACE(location, '*', ',');
+    SET location_name = REPLACE(facility, '*',',');
+    SET hours = REPLACE(location, '*', ',');
