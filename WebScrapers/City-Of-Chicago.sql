@@ -8,7 +8,7 @@ CHARACTER SET latin1
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS
-(facility,phone,address,url);
+(facility,phone,location,url);
 
 UPDATE chicago
 SET facility = REPLACE(facility, '*',',');
