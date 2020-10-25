@@ -11,5 +11,5 @@ IGNORE 1 ROWS
 (location_name,hours,days,requirements,phone,location,city,zip,website,state,languages);
 
 UPDATE illinois
-    SET location_name = REPLACE(location_name, '*',',');
-    SET hours = REPLACE(hours, '*', ',');
+    SET location_name = REPLACE(location_name, '*',',')
+    SET hours = REPLACE(hours, '*', ',')
