@@ -11,5 +11,5 @@ IGNORE 1 ROWS
 (facility,phone,location,url);
 
 UPDATE illinois
-SET facility = REPLACE(facility, '*',',')
-SET location = REPLACE(location, '*', ',');
+    SET facility = REPLACE(facility, '*',',');
+    SET location = REPLACE(location, '*', ',');
