@@ -10,8 +10,12 @@ git pull
 python3 WebScrapers/DPH-Illinois.py
 python3 WebScrapers/City-Of-Chicago.py
 
+cd WebScrapers/ #Need to change directory for SQL script
+
 #Run any SQL scripts
 mysql --local-infile=1 -h localhost -u root -pZabeSaveMe2020! testing_sites < WebScraper.sql
+
+cd .. #Back to main directory for git
 
 #Commit info back to Github
 git commit -m "AutoCommit on $date"
