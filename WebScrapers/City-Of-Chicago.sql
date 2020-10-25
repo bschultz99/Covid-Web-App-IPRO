@@ -1,10 +1,8 @@
 use testing_sites;
 
-CREATE TABLE users (
-    id INT NOT NULL AUTO_INCREMENT, 
-    first_name VARCHAR(255) NOT NULL, 
-    last_name VARCHAR(255) NOT NULL, 
-    email VARCHAR(255) NOT NULL, 
-    transactions INT NOT NULL, 
-    account_creation DATE NOT NULL, 
-    PRIMARY KEY (id));
+LOAD DATA LOCAL INFILE '/home/covid19webapp/Desktop/Covid-Wep-App-IPRO/WebScrapers/City-Of-Chicago.sql'
+INTO TABLE chicago
+FIELDS TERMINATED BY ','
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(facility,phone,address,url)
