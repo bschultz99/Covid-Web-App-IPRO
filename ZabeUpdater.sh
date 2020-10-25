@@ -13,7 +13,7 @@ python3 WebScrapers/City-Of-Chicago.py
 cd WebScrapers/ #Need to change directory for SQL script
 
 #Run any SQL scripts
-mysql --local-infile=1 -h localhost -u root -pZabeSaveMe2020! testing_sites < WebScraper.sql
+sudo mysql --local-infile=1 -h localhost -u root -pZabeSaveMe2020! testing_sites < WebScraper.sql
 
 cd .. #Back to main directory for git
 
