@@ -11,5 +11,4 @@ IGNORE 1 ROWS
 (facility,phone,address,url);
 
 UPDATE chicago
-SET
-    facility = REPLACE(facility, '*',',');
+SET facility = REPLACE(facility, '*',',')
