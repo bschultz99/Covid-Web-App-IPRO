@@ -1,3 +1,5 @@
+#!/bin/sh
+
 date=$(date +"%m%d%y")
 
 #Location of all files
