@@ -8,3 +8,7 @@ FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS
 (facility,phone,address,url);
+
+SELECT facility,
+REPLACE (facility, '*', ',')
+FROM chicago;
