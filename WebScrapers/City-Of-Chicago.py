@@ -23,4 +23,3 @@ with open(filename, 'a', newline='') as csvfile:
            street = test['address'].replace('Chicago', '').replace(', Il','IL').replace(', IL', 'IL').split('IL')
            row = [test['facility'].replace(',', '*'),'','','', test.get('phone'), street[0].replace(',','*'),'Chicago',street[1], web_site.get('url'), 'IL','']
            csvwriter.writerow(row)
-
