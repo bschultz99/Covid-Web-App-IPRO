@@ -2,7 +2,7 @@ use testing_sites;
 
 TRUNCATE TABLE illinois;
 
-LOAD DATA LOCAL INFILE '/home/covid19webapp/Desktop/Covid-Wep-App-IPRO/WebScrapers/DPH-Illinois.csv'
+LOAD DATA LOCAL INFILE '/home/covid19webapp/Desktop/Covid-Wep-App-IPRO/WebScrapers/testing-sites.csv'
 INTO TABLE illinois
 CHARACTER SET latin1
 FIELDS TERMINATED BY ','
