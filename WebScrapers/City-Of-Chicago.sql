@@ -7,4 +7,4 @@ INTO TABLE chicago
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS
-(facility,phone,address,url)
+(facility,phone,address,url);

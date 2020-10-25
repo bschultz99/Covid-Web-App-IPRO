@@ -21,6 +21,6 @@ with open(filename, 'w', newline='') as csvfile:
     for testing in data:
        for test in testing.values():
            web_site = test.get('web_site') or {}
-           row = [test['facility'], test.get('phone'), test['address'], web_site.get('url')]
+           row = [test['facility'].replace(',', '*'), test.get('phone'), test['address'].replace(',','*'), web_site.get('url')]
            csvwriter.writerow(row)
 
