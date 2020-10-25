@@ -12,4 +12,5 @@ IGNORE 1 ROWS
 
 UPDATE chicago
 SET facility = REPLACE(facility, '*',',');
+UPDATE chicago
 SET location = REPLACE(location, '*', ',');
