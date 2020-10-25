@@ -23,4 +23,5 @@ with open(filename, 'w', newline='') as csvfile:
            web_site = test.get('web_site') or {}
            row = [test['facility'].replace(',', '*'), test.get('phone'), test['address'].replace(',','*'), web_site.get('url')]
            csvwriter.writerow(row)
+           print(test['facility'].replace(',', '*'))
 
