@@ -19,5 +19,5 @@ with open(filename, 'w', newline='') as csvfile:
     csvwriter.writerow(fields)
     for testing in data:
        for test in testing.values():
-           row = [test['locationName'], test['hours'], test['daysofoperation'], test['requirements'], test['webcovidhotline'], test['address'], test['city'], test['zip'], test['website'], test['state'], test['languagesoffered']]
+           row = [test['locationName'].replace(',', '*'), test['hours'].replace(',', '*'), test['daysofoperation'].replace(',', '*'), test['requirements'].replace(',', '*'), test['webcovidhotline'].replace(',', '*'), test['address'].replace(',', '*'), test['city'].replace(',', '*'), test['zip'].replace(',', '*'), test['website'].replace(',', '*'), test['state'].replace(',', '*'), test['languagesoffered'].replace(',', '*')]
            csvwriter.writerow(row)
