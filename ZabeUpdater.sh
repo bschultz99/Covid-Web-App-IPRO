@@ -18,5 +18,5 @@ sudo mysql --local-infile=1 -h localhost -u root -pZabeSaveMe2020! testing_sites
 cd .. #Back to main directory for git
 
 #Commit info back to Github
-git commit -m "AutoCommit on $date"
+git commit -a -m "AutoCommit on $date"
 git push
