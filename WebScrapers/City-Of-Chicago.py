@@ -8,20 +8,19 @@ import csv
 url = "https://data.cityofchicago.org/resource/thdn-3grx.json"
 r = requests.get(url).json()
 data = []
-filename = "WebScrapers/City-Of-Chicago.csv"
-fields = ['facility','phone','address','url']
+filename = "WebScrapers/testing-sites.csv"
+fields = ['locationName', 'hours', 'daysofoperation', 'requirements','webcovidhotline','address','city','zip','website','state','languagesoffered']
 for site in r: 
     data.append({
         0 : site
     })
 
-with open(filename, 'w', newline='') as csvfile:
+with open(filename, 'a', newline='') as csvfile:
     csvwriter = csv.writer(csvfile)
-    csvwriter.writerow(fields)
     for testing in data:
        for test in testing.values():
            web_site = test.get('web_site') or {}
-           row = [test['facility'].replace(',', '*'), test.get('phone'), test['address'].replace(',','*'), web_site.get('url')]
+           street = test['address'].replace('Chicago', '').replace(', Il','IL').replace(', IL', 'IL').split('IL')
+           row = [test['facility'].replace(',', '*'),'','','', test.get('phone'), street[0].replace(',','*'),'Chicago',street[1], web_site.get('url'), 'IL','']
            csvwriter.writerow(row)
-           print(test['facility'].replace(',', '*'))
 

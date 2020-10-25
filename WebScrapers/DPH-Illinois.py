@@ -8,7 +8,7 @@ import csv
 url = "https://dph.illinois.gov/sitefiles/COVIDTestingSites.json"
 r = requests.get(url).json()
 data = []
-filename = "WebScrapers/DPH-Illinois.csv"
+filename = "WebScrapers/testing-sites.csv"
 fields = ['locationName', 'hours', 'daysofoperation', 'requirements','webcovidhotline','address','city','zip','website','state','languagesoffered']
 for site in r['features']: 
     data.append({
