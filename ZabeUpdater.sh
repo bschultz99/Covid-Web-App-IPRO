@@ -15,6 +15,7 @@ python3 WebScrapers/City-Of-Chicago.py
 cd WebScrapers/ #Need to change directory for SQL script
 
 #Run any SQL scripts
+sudo mysql --local-infile=1 -h localhost -u root testing_sites < SetGlobal.sql #Fix known error with IN File
 sudo mysql --local-infile=1 -h localhost -u root testing_sites < WebScraper.sql
 
 cd .. #Back to main directory for git
