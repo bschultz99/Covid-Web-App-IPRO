@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+    </head>
+
+    <script>
+        var x = screen.width + "px";
+        var y = screen.height + "px";
+    </script>
+
+    <body>
+        <div id='map' style='width: 100%; height: 100%;'></div>
+
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoiandhZ2xlciIsImEiOiJja2d4dms3dGUwNWU0Mnl0OG5pcTZycTZlIn0.Cp002MjA3sIzuSSDoNWsYw';
+
+            var bounds = [
+                [-88.20, 41.60], //Southwest
+                [-87.39, 42.04] //Northeast
+            ]
+
+            var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/streets-v11',
+                center: [-87.64, 41.87],
+                zoom: 12.5,
+                maxBounds: bounds
+            });
+        </script>
+    </body>
+</html>
