@@ -2,9 +2,9 @@ const mysql = require('mysql');
 console.log('starting mysql')
 
 var con = mysql.createConnection({
-    host: 'd41robot.asuscomm.com',
-    user: 'covid19webapp',
-    password: 'zabe'
+    host: 'localhost',
+    user: 'root',
+    password: 'ZabeSaveMe2020!'
 });
 
 con.connect((err) => {
