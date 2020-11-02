@@ -1,5 +1,5 @@
 //Require Statements
-var mysql = require('mysql');
+//var mysql = require('mysql');
 
 //Set API Token
 mapboxgl.accessToken = 'pk.eyJ1IjoiandhZ2xlciIsImEiOiJja2d4dms3dGUwNWU0Mnl0OG5pcTZycTZlIn0.Cp002MjA3sIzuSSDoNWsYw';
@@ -19,6 +19,7 @@ var map = new mapboxgl.Map({
 	maxBounds: bounds
 });
 
+/*
 //Connect to SQL Server
 var con = mysql.createConnection({
 	  database: "testing_sites",
@@ -32,4 +33,4 @@ var con = mysql.createConnection({
 con.connect(function(err) {
 	  if (err) throw err;
 	  console.log("Connected!");
-});
+});*/
