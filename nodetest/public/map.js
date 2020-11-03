@@ -1,5 +1,6 @@
 //Require MySQL
-const mysql = require('mysql');
+var requirejs = require('requirejs')
+var mysql = require('mysql');
 
 //Set API Token
 mapboxgl.accessToken = 'pk.eyJ1IjoiandhZ2xlciIsImEiOiJja2d4dms3dGUwNWU0Mnl0OG5pcTZycTZlIn0.Cp002MjA3sIzuSSDoNWsYw';
