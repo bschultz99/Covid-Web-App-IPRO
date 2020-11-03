@@ -15,14 +15,9 @@ var con = mysql.createConnection({
 });
 
 //Start MySQL connection
-con.connect((err) => {
-    if(err){
-        console.log('Error connecting to Db');
-        return;
-    }
-    console.log('Connection established');
-});
-con.end((err) => {
+con.connect(function(err){
+    if (err) throw err;
+    console.log("Connected!");
 });
 
 //Points express to the correct folder
