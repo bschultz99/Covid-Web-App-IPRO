@@ -1,28 +1,5 @@
-//Require MySQL
-var requirejs = require('requirejs')
-var mysql = require('mysql');
-
 //Set API Token
 mapboxgl.accessToken = 'pk.eyJ1IjoiandhZ2xlciIsImEiOiJja2d4dms3dGUwNWU0Mnl0OG5pcTZycTZlIn0.Cp002MjA3sIzuSSDoNWsYw';
-
-//Create connection credentials
-console.log('starting mysql')
-var con = mysql.createConnection({
-    host: 'd41robot.asuscomm.com',
-    user: 'covid19webapp',
-    password: 'zabe'
-});
-
-//Start MySQL connection
-con.connect((err) => {
-    if(err){
-        console.log('Error connecting to Db');
-        return;
-    }
-    console.log('Connection established');
-});
-con.end((err) => {
-});
 
 //Set the boundaries of the map
 var bounds = [
