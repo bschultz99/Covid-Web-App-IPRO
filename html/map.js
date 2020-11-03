@@ -19,6 +19,31 @@ var map = new mapboxgl.Map({
 	maxBounds: bounds
 });
 
+var site1 = new mapboxgl.Marker()
+.setLngLat([-87.603680, 41.789510])
+.setPopup(new mapboxgl.Popup().setHTML('<h1>University of Chicago Hospital - Hyde Park</h1>')) // add popup
+.addTo(map);
+
+var site2 = new mapboxgl.Marker()
+.setLngLat([-87.708320, 41.967510])
+.setPopup(new mapboxgl.Popup().setHTML('<h1>Pharmacy One Plus</h1>')) // add popup
+.addTo(map);
+
+var site3 = new mapboxgl.Marker()
+.setLngLat([-87.765800, 41.920940])
+.setPopup(new mapboxgl.Popup().setHTML('<h1>Dr. Jorge Prieto Math and Science Academy</h1>')) // add popup                                                                                                                                                                              .
+.addTo(map);
+
+var site4 = new mapboxgl.Marker()
+.setLngLat([-87.722070, 41.968000])
+.setPopup(new mapboxgl.Popup().setHTML('<h1>Heartland Health Center - Albany Park</h1>')) // add popup                                                                                                                                                                              .
+.addTo(map);
+
+var site5 = new mapboxgl.Marker()
+.setLngLat([-87.64931, 41.94134])
+.setPopup(new mapboxgl.Popup().setHTML('<h1>Howard Brown Health Halsted</h1>')) // add popup                                                                                                                                                                              .
+.addTo(map);
+
 /*
 //Connect to SQL Server
 var con = mysql.createConnection({
