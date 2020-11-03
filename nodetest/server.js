@@ -9,9 +9,10 @@ var app = express();
 //Create connection credentials
 console.log('starting mysql')
 var con = mysql.createConnection({
-    host: 'd41robot.asuscomm.com',
-    user: 'covid19webapp',
-    password: 'zabe'
+    database: 'testing_sites',
+    host: 'localhost',
+    user: 'root',
+    password: 'ZabeSaveMe2020!'
 });
 
 //Start MySQL connection
