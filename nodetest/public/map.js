@@ -15,12 +15,3 @@ var map = new mapboxgl.Map({
 	zoom: 12.5,
 	maxBounds: bounds
 });
-
-var i;
-var marker = [];
-for (i = 0; i < 10; i++){
-	marker[i] = new mapboxgl.Marker()
-	.setLngLat([-87.64 - (i*0.001), 41.87 + (i*0.001)])
-	.setPopup(new mapboxgl.Popup().setHTML(i)) // add popup
-	.addTo(map);
-}
