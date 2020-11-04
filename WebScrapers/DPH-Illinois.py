@@ -1,6 +1,7 @@
 import requests
 import json
 import csv
+from geopy.geocoders import Nominatim
 
 #https://dph.illinois.gov/covid19/covid-19-testing-sites
 #Illinois government testing
@@ -8,8 +9,9 @@ import csv
 url = "https://dph.illinois.gov/sitefiles/COVIDTestingSites.json"
 r = requests.get(url).json()
 data = []
+geolocater = Nominatim(user_agent="covidwebapp")
 filename = "WebScrapers/testing-sites.csv"
-fields = ['locationName', 'hours', 'daysofoperation', 'requirements','webcovidhotline','address','city','zip','website','state','languagesoffered']
+fields = ['locationName', 'hours', 'daysofoperation', 'requirements','webcovidhotline','address','city','zip','website','state','languagesoffered', 'longitude', 'latitude']
 for site in r['features']: 
     data.append({
         0 : site['properties']
