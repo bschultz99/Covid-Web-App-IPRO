@@ -21,5 +21,6 @@ with open(filename, 'w', newline='') as csvfile:
     csvwriter.writerow(fields)
     for testing in data:
        for test in testing.values():
+           #print(geolocater.geocode(test['address'] + "," + test['city'] + "," + test['state'] + "," + test['zip']).latitude)
            row = [test['locationName'].replace(',', '*'), test['hours'].replace(',', '*'), test['daysofoperation'].replace(',', '*'), test['requirements'].replace(',', '*'), test['webcovidhotline'].replace(',', '*'), test['address'].replace(',', '*'), test['city'].replace(',', '*'), test['zip'].replace(',', '*'), test['website'].replace(',', '*'), test['state'].replace(',', '*'), test['languagesoffered'].replace(',', '*')]
            csvwriter.writerow(row)
