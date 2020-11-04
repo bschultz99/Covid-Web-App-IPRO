@@ -8,7 +8,7 @@ CHARACTER SET latin1
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS
-(location_name,hours,days,requirements,phone,location,city,zip,website,state,languages);
+(location_name,hours,days,requirements,phone,location,city,zip,website,state,languages,longitude,latitude);
 
 UPDATE illinois
     SET location_name = REPLACE(location_name, '*',','), 
@@ -21,4 +21,6 @@ UPDATE illinois
     zip = REPLACE(zip,'*',','),
     website = REPLACE(website,'*',','),
     state = REPLACE(state,'*',','),
-    languages = REPLACE(languages,'*',',');
+    languages = REPLACE(languages,'*',','),
+    longitude = REPLACE(longitude,'*',','),
+    latitude = REPLACE(latitude,'*',',');
