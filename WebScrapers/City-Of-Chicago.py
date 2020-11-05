@@ -13,7 +13,7 @@ longit = ""
 latit = ""
 geolocater = Nominatim(user_agent="covidwebapp")
 filename = "WebScrapers/testing-sites.csv"
-fields = ['locationName', 'hours', 'daysofoperation', 'requirements','webcovidhotline','address','city','zip','website','state','languagesoffered', 'longitude', 'latitude']
+fields = ['locationName', 'hours', 'daysofoperation', 'requirements','webcovidhotline','address','city','zip','website','state','languagesoffered', 'latitude', 'longitude']
 for site in r: 
     data.append({
         0 : site
@@ -30,5 +30,5 @@ with open(filename, 'a', newline='', encoding='utf-8') as csvfile:
                longit = location.longitude
            if location is not None and location.latitude is not None:
                latit = location.latitude 
-           row = [test['facility'].replace(',', '*'),'','','', test.get('phone'), street[0].replace(',','*'),'Chicago',street[1], web_site.get('url'), 'IL','', longit, latit]
+           row = [test['facility'].replace(',', '*'),'','','', test.get('phone'), street[0].replace(',','*'),'Chicago',street[1], web_site.get('url'), 'IL','', latit, longit]
            csvwriter.writerow(row)

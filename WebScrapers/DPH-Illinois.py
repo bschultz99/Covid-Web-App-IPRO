@@ -13,7 +13,7 @@ longit = ""
 latit = ""
 geolocater = Nominatim(user_agent="covidwebapp")
 filename = "WebScrapers/testing-sites.csv"
-fields = ['locationName', 'hours', 'daysofoperation', 'requirements','webcovidhotline','address','city','zip','website','state','languagesoffered', 'longitude', 'latitude']
+fields = ['locationName', 'hours', 'daysofoperation', 'requirements','webcovidhotline','address','city','zip','website','state','languagesoffered', 'latitude', 'longitude']
 for site in r['features']: 
     data.append({
         0 : site['properties']
@@ -28,5 +28,5 @@ with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
                longit = location.longitude
            if location is not None and location.latitude is not None:
                latit = location.latitude
-           row = [test['locationName'].replace(',', '*'), test['hours'].replace(',', '*'), test['daysofoperation'].replace(',', '*'), test['requirements'].replace(',', '*'), test['webcovidhotline'].replace(',', '*'), test['address'].replace(',', '*'), test['city'].replace(',', '*'), test['zip'].replace(',', '*'), test['website'].replace(',', '*'), test['state'].replace(',', '*'), test['languagesoffered'].replace(',', '*'), longit, latit]
+           row = [test['locationName'].replace(',', '*'), test['hours'].replace(',', '*'), test['daysofoperation'].replace(',', '*'), test['requirements'].replace(',', '*'), test['webcovidhotline'].replace(',', '*'), test['address'].replace(',', '*'), test['city'].replace(',', '*'), test['zip'].replace(',', '*'), test['website'].replace(',', '*'), test['state'].replace(',', '*'), test['languagesoffered'].replace(',', '*'), latit, longit]
            csvwriter.writerow(row)
