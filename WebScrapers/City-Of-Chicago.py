@@ -19,7 +19,7 @@ for site in r:
         0 : site
     })
 
-with open(filename, 'a', newline='') as csvfile:
+with open(filename, 'a', newline='', encoding='utf-8') as csvfile:
     csvwriter = csv.writer(csvfile)
     for testing in data:
        for test in testing.values():

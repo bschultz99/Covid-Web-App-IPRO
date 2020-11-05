@@ -4,7 +4,7 @@ TRUNCATE TABLE illinois;
 
 LOAD DATA LOCAL INFILE '/home/covid19webapp/Desktop/Covid-Wep-App-IPRO/WebScrapers/testing-sites.csv'
 INTO TABLE illinois
-CHARACTER SET latin1
+CHARACTER SET utf8
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS

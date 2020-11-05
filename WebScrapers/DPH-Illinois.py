@@ -18,7 +18,7 @@ for site in r['features']:
     data.append({
         0 : site['properties']
     })
-with open(filename, 'w', newline='') as csvfile:
+with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
     csvwriter = csv.writer(csvfile)
     csvwriter.writerow(fields)
     for testing in data:
