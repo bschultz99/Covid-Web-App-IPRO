@@ -1,14 +1,12 @@
 {
-  "name": "nodejshost",
+  "name": "nodeserver",
   "version": "0.1.0",
   "description": "",
   "main": "server.js",
   "private": true,
   "dependencies": {
     "@awaitjs/express": "^0.6.3",
-    "express": "^4.17.1",
-    "node": "^12.8.1",
-    "nvm": "^0.0.4"
+    "express": "^4.17.1"
   },
   "devDependencies": {},
   "scripts": {
