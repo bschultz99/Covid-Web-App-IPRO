@@ -91,6 +91,9 @@ async function getData() {
 	var phoneNumber, websiteNoSpace, addressNoSpace, directionsLink;
 
 	for (x in data) {
+		//Defaults to null
+		name, address, hours, days, requirements, number, website, languages, directions, info = null;
+
 		//Change number to be callable
 		if (data[x]['webcovidhotline'] != '') {
 			phoneNumber = data[x]['webcovidhotline'];
