@@ -92,7 +92,7 @@ async function getData() {
 
 	for (x in data) {
 		//Defaults to null
-		name, address, hours, days, requirements, number, website, languages, directions, info = null;
+		name = address = hours = days = requirements = number = website = languages = directions = info = '';
 
 		//Change number to be callable
 		if (data[x]['webcovidhotline'] != '') {
