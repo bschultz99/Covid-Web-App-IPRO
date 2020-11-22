@@ -7,11 +7,12 @@
             form {
                 /* Center the form on the page */
                 margin: 0 auto;
-                width: 500px;
+                width: 750px;
                 /* Form outline */
                 padding: 1em;
                 border: 1px solid #CCC;
                 border-radius: 1em;
+                background-color: lightblue;
             }
 
             ul {
@@ -27,7 +28,7 @@
             label {
                 /* Uniform size & alignment */
                 display: inline-block;
-                width: 90px;
+                width: 250px;
                 text-align: right;
             }
 
@@ -61,7 +62,7 @@
 
             .button {
                 /* Align buttons with the text fields */
-                padding-left: 90px; /* same size as the label elements */
+                padding-left: 300px; /* same size as the label elements */
             }
 
             button {
@@ -99,7 +100,9 @@
   				background-color: #4CAF50;
   				color: white;
 			}
-
+            body{
+                background-image: url('Map.PNG');
+            }
         </style>
     </head>
     <body>
@@ -108,24 +111,57 @@
 			<a class="active" href="addsite.html">Add a Site</a>
 			<a href="about.html">About</a>
 		</div>
-        <form action="/my-handling-form-page" method="post">
+        <form action="bryant_test.html" method="GET">
             <ul>
                 <li>
-                  <label for="name">Name:</label>
-                  <input type="text" id="name" name="user_name">
+                  <label for="locationName">Location Name:</label>
+                  <input type="text" id="locationName" name="location_name">
                 </li>
                 <li>
-                  <label for="mail">E-mail:</label>
-                  <input type="email" id="mail" name="user_email">
+                    <label for="hours">Hours:</label>
+                    <input type="text" id="hours" name="hours">
                 </li>
                 <li>
-                  <label for="msg">Message:</label>
-                  <textarea id="msg" name="user_message"></textarea>
+                    <label for="daysOfOperation">Days of Operation:</label>
+                    <input type="text" id="daysOfOperation" name="days_of_operation">
+                </li>
+                <li>
+                    <label for="requirements">Requirements:</label>
+                    <input type="text" id="requirements" name="requirements">
+                </li>
+                <li>
+                    <label for="phone">Phone:</label>
+                    <input type="text" id="phone" name="phone">
+                </li>
+                <li>
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address">
+                </li>
+                <li>
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city">
+                </li>
+                <li>
+                    <label for="state">State:</label>
+                    <input type="text" id="state" name="state">
+                </li>
+                <li>
+                    <label for="zip">Zip:</label>
+                    <input type="text" id="zip" name="zip">
+                </li>
+                <li>
+                    <label for="languages">Languages:</label>
+                    <input type="text" id="languages" name="languages">
+                </li>
+                <li>
+                    <label for="website">Website:</label>
+                    <input type="text" id="website" name="website">
                 </li>
             </ul>
             <li class="button">
-                <button type="submit">Send your message</button>
+                <button type="submit">Submit Testing Site</button>
             </li>
         </form>
+        <div style="background-image: url('Zabe.jpg');"></div>
     </body>
 </html>
