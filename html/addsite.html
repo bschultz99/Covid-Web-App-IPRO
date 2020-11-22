@@ -111,57 +111,29 @@
 			<a class="active" href="addsite.html">Add a Site</a>
 			<a href="about.html">About</a>
 		</div>
-        <form action="bryant_test.html" method="GET">
-            <ul>
-                <li>
-                  <label for="locationName">Location Name:</label>
-                  <input type="text" id="locationName" name="location_name">
-                </li>
-                <li>
-                    <label for="hours">Hours:</label>
-                    <input type="text" id="hours" name="hours">
-                </li>
-                <li>
-                    <label for="daysOfOperation">Days of Operation:</label>
-                    <input type="text" id="daysOfOperation" name="days_of_operation">
-                </li>
-                <li>
-                    <label for="requirements">Requirements:</label>
-                    <input type="text" id="requirements" name="requirements">
-                </li>
-                <li>
-                    <label for="phone">Phone:</label>
-                    <input type="text" id="phone" name="phone">
-                </li>
-                <li>
-                    <label for="address">Address:</label>
-                    <input type="text" id="address" name="address">
-                </li>
-                <li>
-                    <label for="city">City:</label>
-                    <input type="text" id="city" name="city">
-                </li>
-                <li>
-                    <label for="state">State:</label>
-                    <input type="text" id="state" name="state">
-                </li>
-                <li>
-                    <label for="zip">Zip:</label>
-                    <input type="text" id="zip" name="zip">
-                </li>
-                <li>
-                    <label for="languages">Languages:</label>
-                    <input type="text" id="languages" name="languages">
-                </li>
-                <li>
-                    <label for="website">Website:</label>
-                    <input type="text" id="website" name="website">
-                </li>
-            </ul>
-            <li class="button">
-                <button type="submit">Submit Testing Site</button>
-            </li>
-        </form>
+        <div class="container card card-color">
+            <form action="" id="sampleForm">
+                <h2>Sample Form to JSON API</h2>
+                <div class="form-row">
+                    <label for="FirstName">First Name</label>
+                    <input type="text" class="input-text input-text-block w-100" id="FirstName" name="FirstName">
+                </div>
+                <div class="form-row">
+                    <label for="LastName">Last Name</label>
+                    <input type="text" class="input-text input-text-block w-100" id="LastName" name="LastName">
+                </div>
+                <div class="form-row">
+                    <label for="Email">Email</label>
+                    <input type="email" class="input-text input-text-block w-100" id="Email" name="Email">
+                </div>
+                <div class="form-row mx-auto">
+                    <button type="submit" class="btn-submit" id="btnSubmit">
+                    Submit
+                    </button>
+                </div>
+            </form>
+          </div>
         <div style="background-image: url('Zabe.jpg');"></div>
+        <script src="js/temp.js"></script>
     </body>
 </html>
