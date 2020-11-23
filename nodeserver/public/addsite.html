@@ -14,74 +14,60 @@
                 border-radius: 1em;
                 background-color: lightblue;
             }
-
             ul {
                 list-style: none;
                 padding: 0;
                 margin: 0;
             }
-
             form li + li {
                 margin-top: 1em;
             }
-
             label {
                 /* Uniform size & alignment */
                 display: inline-block;
                 width: 250px;
                 text-align: right;
             }
-
             input, 
             textarea {
                 /* To make sure that all text fields have the same font settings
                     By default, textareas have a monospace font */
                 font: 1em sans-serif;
-
                 /* Uniform text field size */
                 width: 300px;
                 box-sizing: border-box;
-
                 /* Match form field borders */
                 border: 1px solid #999;
             }
-
             input:focus, 
             textarea:focus {
                 /* Additional highlight for focused elements */
                 border-color: #000;
             }
-
             textarea {
                 /* Align multiline text fields with their labels */
                 vertical-align: top;
-
                 /* Provide space to type some text */
                 height: 5em;
             }
-
             .button {
                 /* Align buttons with the text fields */
                 padding-left: 300px; /* same size as the label elements */
             }
-
             button {
                 /* This extra margin represent roughly the same space as the space
                     between the labels and their text fields */
                 margin-left: .5em;
             }
-
             /*Top Nav bar */
             body {
   				margin: 0;
   				font-family: Arial, Helvetica, sans-serif;
 			}
-
 			.topnav {
   				overflow: hidden;
   				background-color: #333;
 			}
-
 			.topnav a {
   				float: left;
   				color: #f2f2f2;
@@ -90,12 +76,10 @@
   				text-decoration: none;
   				font-size: 17px;
 			}
-
 			.topnav a:hover {
   				background-color: #ddd;
   				color: black;
 			}
-
 			.topnav a.active {
   				background-color: #4CAF50;
   				color: white;
@@ -111,65 +95,56 @@
 			<a class="active" href="addsite.html">Add a Site</a>
 			<a href="about.html">About</a>
 		</div>
-        <div class="container card card-color">
-            <form action="" id="sampleForm">
-                <h2>Sample Form to JSON API</h2>
-                <div class="form-row">
-                    <label for="LocationName">Location Name</label>
-                    <input type="text" class="input-text input-text-block w-100" id="LocationName" name="LocationName">
-                </div>
-                <div class="form-row">
-                    <label for="Hours">Hours</label>
-                    <input type="text" class="input-text input-text-block w-100" id="Hours" name="Hours">
-                </div>
-                <div class="form-row">
-                    <label for="Hours">Hours</label>
-                    <input type="text" class="input-text input-text-block w-100" id="Hours" name="Hours">
-                </div>
-                <div class="form-row">
-                    <label for="DaysOfOperation">Days of Operation</label>
-                    <input type="text" class="input-text input-text-block w-100" id="daysofoperation" name="daysofoperation">
-                </div>
-                <div class="form-row">
-                    <label for="Requirements">Requirements</label>
-                    <input type="text" class="input-text input-text-block w-100" id="Requirements" name="Requirements">
-                </div>
-                <div class="form-row">
-                    <label for="Phone">Phone</label>
-                    <input type="text" class="input-text input-text-block w-100" id="Phone" name="Phone">
-                </div>
-                <div class="form-row">
-                    <label for="Address">Address</label>
-                    <input type="text" class="input-text input-text-block w-100" id="Address" name="Address">
-                </div>
-                <div class="form-row">
-                    <label for="City">City</label>
-                    <input type="text" class="input-text input-text-block w-100" id="City" name="City">
-                </div>
-                <div class="form-row">
-                    <label for="State">State</label>
-                    <input type="text" class="input-text input-text-block w-100" id="State" name="State">
-                </div>
-                <div class="form-row">
-                    <label for="Zip">Zip</label>
-                    <input type="text" class="input-text input-text-block w-100" id="Zip" name="Zip">
-                </div>
-                <div class="form-row">
-                    <label for="Languages">Languages</label>
-                    <input type="text" class="input-text input-text-block w-100" id="Languages" name="Languages">
-                </div>
-                <div class="form-row">
-                    <label for="Website">Website</label>
-                    <input type="text" class="input-text input-text-block w-100" id="Website" name="Website">
-                </div>
-                <div class="form-row mx-auto">
-                    <button type="submit" class="btn-submit" id="btnSubmit">
-                    Submit
-                    </button>
-                </div>
-            </form>
-          </div>
-        <div style="background-image: url('Zabe.jpg');"></div>
-        <script src="js/temp.js"></script>
+        <form action="index.html" method="GET">
+            <ul>
+                <li>
+                  <label for="locationName">Location Name:</label>
+                  <input type="text" id="locationName" name="location_name">
+                </li>
+                <li>
+                    <label for="hours">Hours:</label>
+                    <input type="text" id="hours" name="hours">
+                </li>
+                <li>
+                    <label for="daysOfOperation">Days of Operation:</label>
+                    <input type="text" id="daysOfOperation" name="days_of_operation">
+                </li>
+                <li>
+                    <label for="requirements">Requirements:</label>
+                    <input type="text" id="requirements" name="requirements">
+                </li>
+                <li>
+                    <label for="phone">Phone:</label>
+                    <input type="text" id="phone" name="phone">
+                </li>
+                <li>
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address">
+                </li>
+                <li>
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city">
+                </li>
+                <li>
+                    <label for="state">State:</label>
+                    <input type="text" id="state" name="state">
+                </li>
+                <li>
+                    <label for="zip">Zip:</label>
+                    <input type="text" id="zip" name="zip">
+                </li>
+                <li>
+                    <label for="languages">Languages:</label>
+                    <input type="text" id="languages" name="languages">
+                </li>
+                <li>
+                    <label for="website">Website:</label>
+                    <input type="text" id="website" name="website">
+                </li>
+            </ul>
+            <li class="button">
+                <button type="submit">Submit Testing Site</button>
+            </li>
+        </form>
     </body>
-</html>
+</html> 
