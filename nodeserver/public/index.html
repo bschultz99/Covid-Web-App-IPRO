@@ -1,37 +1,54 @@
 <html>
-	<!--Get Mapbox API-->
     <head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<style>
-			body {
-  				margin: 0;
-  				font-family: Arial, Helvetica, sans-serif;
-			}
+		<link rel="stylesheet" href="topbar.css">
 
-			.topnav {
-  				overflow: hidden;
-  				background-color: #333;
-			}
+		<div class="sidenav">
+			<b>Filters</b>
+			<p>City</p>
+			<input type="text" id="city"/>
+			<p>Days Open</p>
+			<div class="toggle">
+				<input type="checkbox" id="monday">
+				<label for="monday">Monday</label>
+			</div>
+			<div class="toggle">
+				<input type="checkbox" id="tuesday">
+				<label for="tuesday">Tuesday</label>
+			</div>
+			<div class="toggle">
+				<input type="checkbox" id="wednesday">
+				<label for="wednesday">Wednesday</label>
+			</div>
+			<div class="toggle">
+				<input type="checkbox" id="thursday">
+				<label for="thursday">Thursday</label>
+			</div>
+			<div class="toggle">
+				<input type="checkbox" id="friday">
+				<label for="friday">Friday</label>
+			</div>
+			<div class="toggle">
+				<input type="checkbox" id="saturday">
+				<label for="saturday">Saturday</label>
+			</div>
+			<div class="toggle">
+				<input type="checkbox" id="sunday">
+				<label for="sunday">Sunday</label>
+			</div>
+			<p>Languages</p>
+			<div class="toggle">
+				<input type="checkbox" id="english">
+				<label for="english">English</label>
+			</div>
+			<div class="toggle">
+				<input type="checkbox" id="spanish">
+				<label for="sunday">Spanish</label>
+			</div>
+			<link rel="stylesheet" href="sidebar.css">
+		</div>
 
-			.topnav a {
-  				float: left;
-  				color: #f2f2f2;
-  				text-align: center;
-  				padding: 14px 16px;
-  				text-decoration: none;
-  				font-size: 17px;
-			}
-
-			.topnav a:hover {
-  				background-color: #ddd;
-  				color: black;
-			}
-
-			.topnav a.active {
-  				background-color: #4CAF50;
-  				color: white;
-			}
-		</style>
+		<!--Get Mapbox API-->
         <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
         <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
     </head>
