@@ -87,68 +87,29 @@
             body{
                 background-image: url('Map.PNG');
             }
+            textarea {
+                width: 750px;
+                height: 140px;
+                padding: 10px;
+                line-height: 1.5;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                box-shadow: 1px 1px 1px #999;
+            }
         </style>
     </head>
     <body>
         <div class="topnav">
 			<a href="index.html">Home</a>
-            <a class="active" href="addsite.html">Add a Site</a>
-            <a href="feedback.html">Feedback</a>
+            <a href="addsite.html">Add a Site</a>
+            <a class="active" href="feedback.html">Feedback</a>
 			<a href="about.html">About</a>
 		</div>
         <form action="index.html" method="GET">
-            <ul>
-                <li>
-                  <label for="locationName">Location Name:</label>
-                  <input type="text" id="locationName" name="location_name">
-                </li>
-                <li>
-                    <label for="hours">Hours:</label>
-                    <input type="text" id="hours" name="hours">
-                </li>
-                <li>
-                    <label for="daysOfOperation">Days of Operation:</label>
-                    <input type="text" id="daysOfOperation" name="days_of_operation">
-                </li>
-                <li>
-                    <label for="requirements">Requirements:</label>
-                    <input type="text" id="requirements" name="requirements">
-                </li>
-                <li>
-                    <label for="phone">Phone:</label>
-                    <input type="text" id="phone" name="phone">
-                </li>
-                <li>
-                    <label for="address">Address:</label>
-                    <input type="text" id="address" name="address">
-                </li>
-                <li>
-                    <label for="city">City:</label>
-                    <input type="text" id="city" name="city">
-                </li>
-                <li>
-                    <label for="state">State:</label>
-                    <input type="text" id="state" name="state">
-                </li>
-                <li>
-                    <label for="zip">Zip:</label>
-                    <input type="text" id="zip" name="zip">
-                </li>
-                <li>
-                    <label for="languages">Languages:</label>
-                    <input type="text" id="languages" name="languages">
-                </li>
-                <li>
-                    <label for="website">Website:</label>
-                    <input type="text" id="website" name="website">
-                </li>
-                <li>
-                    <label for="review">Review:</label>
-                    <input type="text" id="review" name="review">
-                </li>
-            </ul>
+                  <br>
+                  <textarea id="comment" rows ="4" cols="50" name="comment"></textarea>
             <li class="button">
-                <button type="submit">Submit Testing Site</button>
+                <button type="submit">Submit Feedback</button>
             </li>
         </form>
     </body>
